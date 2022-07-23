@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .mega-box{
+            height:300px;
+            /* width: 500px; */
+            /* border:solid 1px; */
+            position: relative;
+        }
+        .dew{
+            width: 25px;
+            height: 50px;
+            background-color:blue ;
+            position: absolute;
+            top: 80px;
+            transition: 2s;
+            border-radius: 50% 50% 0 0 ;
+            animation: dew 4s infinite linear;
+        }
+        .dew-1{
+            animation-delay: .2s;
+        }
+        .dew-2{
+            animation-delay: .4s;
+        }
+        .dew-3{
+            animation-delay: .6s;
+        }
+        .dew-4{
+            animation-delay: .8s;
+        }
+        .dew-5{
+            animation-delay: 1.2s;
+        }
+        .dew-6{
+            animation-delay: 1.4s;
+        }
+        .dew-7{
+            animation-delay: 1.6s;
+        }
+        .dew-8{
+            animation-delay: 1.8s;
+        }
+        .dew-9{
+            animation-delay: 2s;
+        }
+        .dew-10{
+            animation-delay: 2.2s;
+        }
+        .dew-11{
+            animation-delay: 2.4s;
+        }
+        .dew-12{
+            animation-delay: 2.6s;
+        }
+        .dew-13{
+            animation-delay: 2.8s;
+        }
+        .dew-14{
+            animation-delay: 3s;
+        }
+        .dew-15{
+            animation-delay: 3.2s;
+        }
+        .dew-16{
+            animation-delay: 3.4s;
+        }
+        .dew-17{
+            animation-delay: 3.6s;
+        }
+        .dew-18{
+            animation-delay: 3.8s;
+        }
+        .dew-19{
+            animation-delay: 4s;
+        }
+        .dew-20{
+            animation-delay: 1s;
+        }
+        @keyframes dew{
+            0%{
+                top: 80px;
+                left: -10px;
+            }
+            99.99%{
+                top: 80px;
+                left: calc(100% - 25px);
+            }
+            100%{
+                top: 180px;
+                left: calc(100% - 25px);
+            }
+
+        100%{
+                top: 80px;
+                left: -10px;
+            }
+            
+            100%{
+                top: 80px;
+                left: -10px;
+            }
+        }
+        
+        .water{
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            bottom:0;
+            background-color: blue;
+            animation: animation .5s infinite alternate;
+        }
+        @keyframes animation {
+            0%{
+                height: 200px;
+            }100%{
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mega-box">
+        <div class="dew dew-1"></div>
+        <div class="dew dew-2"></div>
+        <div class="dew dew-3"></div>
+        <div class="dew dew-4"></div>
+        <div class="dew dew-5"></div>
+        <div class="dew dew-6"></div>
+        <div class="dew dew-7"></div>
+        <div class="dew dew-8"></div>
+        <div class="dew dew-9"></div>
+        <div class="dew dew-10"></div>
+        <div class="dew dew-11"></div>
+        <div class="dew dew-12"></div>
+        <div class="dew dew-13"></div>
+        <div class="dew dew-14"></div>
+        <div class="dew dew-15"></div>
+        <div class="dew dew-16"></div>
+        <div class="dew dew-17"></div>
+        <div class="dew dew-18"></div>
+        <div class="dew dew-19"></div>
+        <div class="dew dew-20"></div>
+        <div class="water">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+</html>

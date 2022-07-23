@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: #cccccc;
+        }
+        .fielt{
+            border-radius: 50%;
+            height: 500px;
+            width: 700px;
+            border:solid 2px red;
+        }
+        img{
+            position: relative;
+            left: 506px;
+            top: 200px;
+            height: 100px;
+        }
+        .bal{
+            height:20px;
+            width: 20px;
+            background-color: aqua;
+            border-radius: 50%;
+            position:absolute;
+            top: 290px;
+            left: 500px;
+        }
+        .fielt:hover img{
+            transform: rotate(30deg);
+            transform-origin: top left;
+        } 
+        .fielt:hover 
+        .bal{
+            left: 200px;
+            transition: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="fielt">
+        <img src="image/bat.png" alt="">
+        <span class="bal"></span>
+    </div>
+    
+</body>
+</html>
